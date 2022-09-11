@@ -1,0 +1,32 @@
+.create-note-dropdown {
+  display: flex;
+  height: 100px;
+  padding: 20px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background-color: #B0E0E6;
+}
+
+.category-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  color: #808080;
+  text-transform: capitalize;
+}
+
+.create-note-dropdown__note-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.create-note-dropdown__note-input {
+  color: #808080;
+  resize: none;
+  margin-bottom: 10px;
+  height: 100px;
+  width: 100%;
+}

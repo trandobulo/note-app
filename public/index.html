@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="../src/global.css" />
+  <link rel="stylesheet" href="../src/row.css" />
+  <link rel="stylesheet" href="../src/create-note-dropdown.css" />
+</head>
+<body>
+  <main>
+
+    <div id="notes-container">
+      <div class="row_title">
+        <div class="category-icon-container"></div>
+        <label class="col_title">created</label>
+        <label class="col_title">category</label>
+        <label class="col_title">content</label>
+        <label class="col_title">dates</label>
+        <div class="actions-container">
+          <img class="action-icon" src="../src/svg/archive-box.svg" />
+          <img class="action-icon" src="../src/svg/trash.svg" />
+        </div>
+      </div>
+
+      <div class="note-list">
+        <div class="row">
+          <div class="category-icon-container">
+            <div class="row__category-icon">
+              <img class="action-icon" src="../src/svg/thought-balloon.svg" />
+            </div>
+          </div>
+          <label class="col_content">created</label>
+          <label class="col_content">category</label>
+          <label class="col_content">content</label>
+          <label class="col_content">dates</label>
+          <div class="actions-container">
+            <img class="action-icon" src="../src/svg/pencil.svg" />
+            <img class="action-icon" src="../src/svg/archive-box.svg" />
+            <img class="action-icon" src="../src/svg/trash.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button>create note</button>
+    </div>
+
+    <div class="create-note-dropdown">
+
+      <div class="category-input">
+        <label for="task"
+          ><input
+            type="radio"
+            id="task"
+            name="category"
+            value="rask" />task</label
+        >
+
+        <label for="random thought"
+          ><input
+            type="radio"
+            id="random thought"
+            name="category"
+            value="random thought" />random thought</label
+        >
+
+        <label for="idea"
+          ><input
+            type="radio"
+            id="idea"
+            name="category"
+            value="idea" />idea</label
+        >
+      </div>
+
+      <div class="create-note-dropdown__note-input-container">
+        <textarea class="create-note-dropdown__note-input"></textarea>
+        <button>save note</button>
+      </div>
+
+    </div>
+
+    <div id="summary-container">
+
+      <div class="row_title">
+        <div class="category-icon-container"></div>
+        <label class="col_title">note category</label>
+        <label class="col_title">active</label>
+        <label class="col_title">archived</label>
+      </div>
+
+      <div class="row_category">
+        <div class="category-icon-container">
+          <div class="row__category-icon">
+            <img class="action-icon" src="../src/svg/thought-balloon.svg" />
+          </div>
+        </div>
+        <label class="col_content">thougths</label>
+        <label class="col_content">8</label>
+        <label class="col_content">17</label>
+      </div>
+
+      <div class="row">
+        <div class="category-icon-container">
+          <div class="row__category-icon">
+            <img class="action-icon" src="../src/svg/thought-balloon.svg" />
+          </div>
+        </div>
+        <label class="col_content">created</label>
+        <label class="col_content">category</label>
+        <label class="col_content">content</label>
+        <label class="col_content">dates</label>
+        <div class="actions-container">
+          <img class="action-icon" src="../src/svg/recovery-arrow.svg" />
+          <img class="action-icon" src="../src/svg/trash.svg" />
+        </div>
+
+    </div>
+  </main>
+</body>
