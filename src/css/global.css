@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  min-width: 600px;
+}
+
+button {
+  text-transform: capitalize;
+}
+
+.create-note-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.actions-container {
+  display: flex;
+  width: 20%;
+  padding-right: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.action-icon {
+  padding: 0px 2px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+}
+
+.category-icon-container {
+  display: flex;
+  width: 50px;
+  min-width: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.col_title {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
+}
+
+.col_content {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #808080;
+}
