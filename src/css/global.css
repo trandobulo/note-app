@@ -1,41 +1,38 @@
 body {
   font-family: sans-serif;
+  margin: 0px;
 }
 
 main {
-  width: 100%;
+  padding: 10px;
+  width: inherit;
   min-width: 600px;
 }
 
 button {
   text-transform: capitalize;
+  background-color: #6eb7cd;
+  border: none;
+  width: 150px;
+  height: 30px;
 }
 
-.create-note-button-container {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
-}
-
-.actions-container {
-  display: flex;
-  width: 20%;
-  padding-right: 20px;
-  justify-content: flex-end;
-  align-items: center;
+.note-list-container {
+  margin-bottom: 20px;
 }
 
 .action-icon {
-  padding: 0px 2px;
+  padding: 0px 0px;
   width: 30px;
   height: 30px;
   border: none;
   background: none;
+  margin: 0px 3px;
 }
 
-.category-icon-container {
+.col_icon {
   display: flex;
-  width: 50px;
+  width: 5%;
   min-width: 50px;
   justify-content: center;
   align-items: center;
@@ -44,10 +41,10 @@ button {
 .col_title {
   width: 20%;
   display: flex;
-  align-items: center;
   text-transform: capitalize;
   font-weight: 600;
   color: #fff;
+  padding-left: 10px;
 }
 
 .col_content {
@@ -55,5 +52,15 @@ button {
   display: flex;
   align-items: center;
   overflow: hidden;
-  color: #808080;
+  margin: 0px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.col_content:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.col_content:nth-child(3) {
+  text-transform: capitalize;
 }
