@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+main {
+  padding: 10px;
+  width: inherit;
+  min-width: 600px;
+}
+
+button {
+  text-transform: capitalize;
+  background-color: #6eb7cd;
+  border: none;
+  width: 150px;
+  height: 30px;
+}
+
+.note-list-container {
+  margin-bottom: 20px;
+}
+
+.action-icon {
+  padding: 0px 0px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  margin: 0px 3px;
+}
+
+.col_icon {
+  display: flex;
+  width: 5%;
+  min-width: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.col_title {
+  width: 20%;
+  display: flex;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.col_content {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.col_content:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.col_content:nth-child(3) {
+  text-transform: capitalize;
+}
