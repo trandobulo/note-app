@@ -1,13 +1,13 @@
 function renderSummary(category, noteList) {
   const summaryItem = document.createElement("div");
-  const summaryItemName = category.split(" ").join("-");
+  const summaryItemName = category.replace(/\s/g, "-");
   const summaryContainerId = `${summaryItemName}-summary`;
 
   summaryItem.innerHTML = `
   <div class="row_category" id=${summaryContainerId}>
   <div class="col_icon">
     <div class="row__category-icon">
-      <img class="action-icon" src="../src/svg/${summaryItemName}.svg" />
+      <img class="action-icon" src="./svg/${summaryItemName}.svg" />
     </div>
   </div>
   <label class="col_content">${category}</label>

@@ -21,7 +21,7 @@ function parseDates(noteObj) {
 const rowTemplate = (noteObj) => {
   return `<div class="col_icon">
           <div class="row__category-icon">
-            <img class="action-icon" src="../src/svg/${noteObj.category
+            <img class="action-icon" src="./svg/${noteObj.category
               .split(" ")
               .join("-")}.svg" />
           </div>
@@ -37,16 +37,16 @@ const rowTemplate = (noteObj) => {
         <div class="row__actions-container ">
           ${(noteObj.active
             ? [
-                { src: "../src/svg/pencil.svg", id: "edit-note-button" },
+                { src: "./svg/pencil.svg", id: "edit-note-button" },
                 {
-                  src: "../src/svg/archive-box.svg",
+                  src: "./svg/archive-box.svg",
                   id: "archive-note-button",
                 },
-                { src: "../src/svg/trash.svg", id: "delete-note-button" },
+                { src: "./svg/trash.svg", id: "delete-note-button" },
               ]
             : [
-                { src: "../src/svg/recovery.svg", id: "recovery-note-button" },
-                { src: "../src/svg/trash.svg", id: "delete-note-button" },
+                { src: "./svg/recovery.svg", id: "recovery-note-button" },
+                { src: "./svg/trash.svg", id: "delete-note-button" },
               ]
           )
             .map(

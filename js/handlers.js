@@ -30,6 +30,7 @@ function handleSaveNote(noteList, isNewNote, noteObj) {
     document.querySelector(".create-note-pop-up-overlayer").remove();
   } catch (e) {
     alert(e);
+    document.querySelector("#note-input").focus();
   }
 }
 

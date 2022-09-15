@@ -1,7 +1,6 @@
 class NoteList {
-  constructor(notes) {
+  constructor() {
     this.notes = [];
-    notes.forEach((el) => this.addNote(el.category, el.content));
   }
 
   addNote(category, content) {
