@@ -1,4 +1,4 @@
-import { renderEditNote } from "./editNote.js";
+import { renderEditNote } from "./renderEditNote.js";
 import {
   handleArchiveNote,
   handleDeleteNote,
