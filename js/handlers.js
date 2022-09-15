@@ -12,11 +12,11 @@ function handleSaveNote(noteList, isNewNote, noteObj) {
 
     if (isNewNote) {
       noteList.addNote(category, content);
-      renderNote(
-        noteList.notes[noteList.notes.length - 1],
-        isNewNote,
-        noteList
-      );
+
+      const newNote = noteList.notes[noteList.notes.length - 1];
+
+      renderNote(newNote, isNewNote, noteList);
+      changeSummaryCount(newNote, "add");
     } else {
       const editedNoteObj = {
         ...noteObj,

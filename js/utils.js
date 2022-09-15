@@ -18,6 +18,10 @@ function changeSummaryCount(noteObj, action) {
       break;
     case "delete":
       noteObj.active ? activeCount.innerHTML-- : archiveCount.innerHTML--;
+      break;
+    case "add":
+      activeCount.innerHTML++;
+      break;
     default:
   }
 }
